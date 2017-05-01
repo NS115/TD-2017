@@ -17,7 +17,7 @@ plot(new_colony_size$Colony.Size ~ new_colony_size$Year,
      main = "Evolution of Cape Bird Adélie Penguin Colony Size between 1983 and 2012", 
      cex.main = 1.5)
 
-# adding a secondary y axis
+# Adding a secondary y axis
 par(new = TRUE) 
 plot(sea_ice_extent$Extent ~ colony_size$Year, 
      type = "l", 
@@ -32,7 +32,7 @@ axis(4)
 mtext("Sea Ice Extent / million square km",side=4,line=3)
 
 
-# adding a legend
+# Adding a legend
 legend("topleft",
        col=c("red","blue"),
        lty=1,legend=c("Colony Size","Sea Ice Extent"), 
@@ -56,7 +56,6 @@ cor.test (sea_ice_extent$Extent,
 
 
 ## Plot 2 ##
-
 ice = sea_ice_extent$Extent
 colony = colony_size$Colony.Size
 
